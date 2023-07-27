@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__burger" id="header__burger">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Story</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="header__logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <button class="header__burger-btn" id="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="header__nav">
+            <a href="#">Home</a>
+            <a href="#">Story</a>
+            <a href="#">Products</a>
+            <a href="#">People</a>
+            <a href="#">News</a>
+            <a href="#">Contacts</a>
+          </nav>
+        </div>
+      </header>
+      <section class="todo">
+        <div class="todo__container">
+          <div class="todo__input-wrapper">
+            <input type="text" id="todo__input" placeholder="Add your task" />
+            <button onclick="addTask()">Add</button>
+          </div>
+          <ul class="todo__tasks" id="todo__tasks"></ul>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__inner">
+          <nav class="footer__nav">
+            <a href="#">Home</a>
+            <a href="#">Story</a>
+            <a href="#">Products</a>
+            <a href="#">People</a>
+            <a href="#">News</a>
+            <a href="#">Contacts</a>
+          </nav>
+          <div class="header__logo">
+            <a href="#">
+              <img src="images/logo.jpg" alt="logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
