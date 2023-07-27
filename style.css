@@ -5,6 +5,7 @@
 a {
   text-decoration: none;
   display: inline-block;
+  color: #000;
 }
 
 a:active,
